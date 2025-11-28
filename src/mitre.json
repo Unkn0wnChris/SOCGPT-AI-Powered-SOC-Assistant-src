@@ -1,0 +1,81 @@
+{
+  "powershell": { "id": "T1059.001", "name": "PowerShell", "tactic": "Execution" },
+  "pwsh": { "id": "T1059.001", "name": "PowerShell", "tactic": "Execution" },
+  "cmd.exe": { "id": "T1059.003", "name": "Windows Command Shell", "tactic": "Execution" },
+  "bash": { "id": "T1059.004", "name": "Unix Shell", "tactic": "Execution" },
+  "sh": { "id": "T1059.004", "name": "Unix Shell", "tactic": "Execution" },
+  "zsh": { "id": "T1059.004", "name": "Unix Shell", "tactic": "Execution" },
+
+  "mimikatz": { "id": "T1003.001", "name": "LSASS Memory", "tactic": "Credential Access" },
+  "lsass.exe": { "id": "T1003.001", "name": "LSASS Memory", "tactic": "Credential Access" },
+  "sekurlsa": { "id": "T1003.001", "name": "Credential Dumping", "tactic": "Credential Access" },
+
+  "rundll32": { "id": "T1218.011", "name": "Rundll32", "tactic": "Defense Evasion" },
+  "regsvr32": { "id": "T1218.010", "name": "Regsvr32", "tactic": "Defense Evasion" },
+  "mshta": { "id": "T1218.005", "name": "Mshta", "tactic": "Defense Evasion" },
+  "installutil": { "id": "T1218.004", "name": "InstallUtil", "tactic": "Defense Evasion" },
+
+  "privilege escalation": { "id": "T1548", "name": "Abuse Elevation Control Mechanisms", "tactic": "Privilege Escalation" },
+  "sudo su": { "id": "T1548", "name": "Abuse Elevation Control Mechanisms", "tactic": "Privilege Escalation" },
+  "token impersonation": { "id": "T1134", "name": "Access Token Manipulation", "tactic": "Privilege Escalation" },
+  "sebackupprivilege": { "id": "T1548.002", "name": "Bypass UAC", "tactic": "Privilege Escalation" },
+
+  "login failed": { "id": "T1110", "name": "Brute Force", "tactic": "Credential Access" },
+  "failed password": { "id": "T1110", "name": "Brute Force", "tactic": "Credential Access" },
+  "authentication failed": { "id": "T1110", "name": "Brute Force", "tactic": "Credential Access" },
+  "multiple failed logins": { "id": "T1110", "name": "Brute Force", "tactic": "Credential Access" },
+  "rdp brute force": { "id": "T1110", "name": "Brute Force", "tactic": "Credential Access" },
+
+  "ssh": { "id": "T1021.004", "name": "SSH Remote Services", "tactic": "Lateral Movement" },
+  "rdp": { "id": "T1021.001", "name": "Remote Desktop Protocol", "tactic": "Lateral Movement" },
+  "psexec": { "id": "T1570", "name": "Lateral Tool Transfer", "tactic": "Lateral Movement" },
+  "wmiexec": { "id": "T1047", "name": "WMI Execution", "tactic": "Execution" },
+  "winrm": { "id": "T1021.006", "name": "WinRM", "tactic": "Lateral Movement" },
+
+  "wget http": { "id": "T1105", "name": "Ingress Tool Transfer", "tactic": "Command and Control" },
+  "curl http": { "id": "T1105", "name": "Ingress Tool Transfer", "tactic": "Command and Control" },
+  "downloadfile": { "id": "T1105", "name": "Ingress Tool Transfer", "tactic": "Command and Control" },
+  "powershell invoke-webrequest": { "id": "T1105", "name": "Ingress Tool Transfer", "tactic": "Command and Control" },
+
+  "base64": { "id": "T1027", "name": "Obfuscated/Encrypted Files", "tactic": "Defense Evasion" },
+  "encodedcommand": { "id": "T1027", "name": "Obfuscated/Encrypted Files", "tactic": "Defense Evasion" },
+  "obfuscation": { "id": "T1027", "name": "Obfuscated/Encrypted Files", "tactic": "Defense Evasion" },
+
+  "net user": { "id": "T1087.001", "name": "Account Discovery", "tactic": "Discovery" },
+  "whoami": { "id": "T1033", "name": "System Owner/User Discovery", "tactic": "Discovery" },
+  "query user": { "id": "T1087.001", "name": "Account Discovery", "tactic": "Discovery" },
+  "enum": { "id": "T1087", "name": "Account Discovery", "tactic": "Discovery" },
+
+  "tasklist": { "id": "T1057", "name": "Process Discovery", "tactic": "Discovery" },
+  "ps aux": { "id": "T1057", "name": "Process Discovery", "tactic": "Discovery" },
+  "wmic process": { "id": "T1057", "name": "Process Discovery", "tactic": "Discovery" },
+
+  "ipconfig": { "id": "T1016", "name": "System Network Configuration Discovery", "tactic": "Discovery" },
+  "ifconfig": { "id": "T1016", "name": "System Network Configuration Discovery", "tactic": "Discovery" },
+  "route print": { "id": "T1016", "name": "System Network Configuration Discovery", "tactic": "Discovery" },
+
+  "nc -lvp": { "id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "Execution" },
+  "netcat": { "id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "Execution" },
+  "rev shell": { "id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "Execution" },
+
+  "suspicious dll": { "id": "T1574", "name": "DLL Search Order Hijacking", "tactic": "Persistence" },
+  "dll injection": { "id": "T1055.001", "name": "DLL Injection", "tactic": "Execution" },
+
+  "scheduled task": { "id": "T1053.005", "name": "Scheduled Task", "tactic": "Persistence" },
+  "schtasks": { "id": "T1053.005", "name": "Scheduled Task", "tactic": "Persistence" },
+  "cron": { "id": "T1053.003", "name": "Cron Job", "tactic": "Persistence" },
+
+  "registry run": { "id": "T1547.001", "name": "Registry Run Keys / Startup", "tactic": "Persistence" },
+  "startup folder": { "id": "T1547.001", "name": "Registry Run Keys / Startup", "tactic": "Persistence" },
+
+  "phishing": { "id": "T1566.001", "name": "Spearphishing Attachment", "tactic": "Initial Access" },
+  "attachment.exe": { "id": "T1566.001", "name": "Spearphishing Attachment", "tactic": "Initial Access" },
+
+  "dns tunneling": { "id": "T1572", "name": "Protocol Tunneling", "tactic": "Command and Control" },
+  "base64 dns": { "id": "T1572", "name": "Protocol Tunneling", "tactic": "Command and Control" },
+
+  "crypto miner": { "id": "T1496", "name": "Resource Hijacking", "tactic": "Impact" },
+  "xmrig": { "id": "T1496", "name": "Resource Hijacking", "tactic": "Impact" }
+}
+
+
