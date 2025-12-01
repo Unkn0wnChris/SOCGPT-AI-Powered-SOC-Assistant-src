@@ -21,7 +21,7 @@ ollama_url = "http://localhost:11434/"
 
 
 # Multi turn chatbot - Query Ollama server using the Mistral model and return responses
-def ollama_query(input_of_user: str, model_selected: str = "mistral", stream: bool = False) -> str:
+def ollama_query(input_of_user: str, model_selected: str = "mistral_q4km", stream: bool = False) -> str:
     try:
         model_response = ollama.generate(
             model= model_selected,

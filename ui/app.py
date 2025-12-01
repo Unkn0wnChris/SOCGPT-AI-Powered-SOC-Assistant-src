@@ -15,6 +15,9 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 if "logs" not in st.session_state:
     st.session_state.logs = []
+if "Begin Analysis" not in st.session_state:
+    st.session_state.run_analysis = False 
+
 
 # Sidebar
 with st.sidebar:

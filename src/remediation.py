@@ -36,7 +36,7 @@ Provide a clear, concise, and actionable remediation step that an SOC analyst sh
 
     try:
         # Use the correct argument name for your ollama_query function
-        result = ollama_query(prompt, model_selected="mistral")
+        result = ollama_query(prompt, model_selected="mistral_q4km")
         if not result:
             return "No remediation returned by AI."
         return result
