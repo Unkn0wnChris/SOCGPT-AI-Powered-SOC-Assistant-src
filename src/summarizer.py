@@ -9,7 +9,7 @@ def summarize_alert(log: str) -> str:
     {log}
     """
     
-    return ollama_query(prompt, model_selected="mistral")
+    return ollama_query(prompt, model_selected="mistral:7b-instruct-q4_K_M")
 
    # response = openai.ChatCompletion.create(
     #    model="gpt-4",
