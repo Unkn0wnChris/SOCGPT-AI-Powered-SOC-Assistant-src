@@ -75,7 +75,11 @@
   "base64 dns": { "id": "T1572", "name": "Protocol Tunneling", "tactic": "Command and Control" },
 
   "crypto miner": { "id": "T1496", "name": "Resource Hijacking", "tactic": "Impact" },
-  "xmrig": { "id": "T1496", "name": "Resource Hijacking", "tactic": "Impact" }
+  "xmrig": { "id": "T1496", "name": "Resource Hijacking", "tactic": "Impact" },
+
+  "data_transfer_size_limits": {"id":"T1030", "name": "Data Transfer Size Limits", "tactic":"Exfiltration"}
 }
+
+
 
 
