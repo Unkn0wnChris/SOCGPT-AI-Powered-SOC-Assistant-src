@@ -1,0 +1,237 @@
+{
+    "T1059.001":{
+        "name":"PowerShell",
+        "tactic": "Execution",
+        "platform": ["Windows"],
+        "aliases": ["powershell","pwsh","powershell.exe","pwsh.exe"]
+    },
+    "T1059.002":{
+        "name":"AppleScript",
+        "tactic":"Execution",
+        "platform":["macOS"],
+        "aliases":["osascript"]
+    },
+    "T1059.003":{
+        "name":"Windows Command Shell",
+        "tactic":"Execution",
+        "platform":["Windows"],
+        "aliases":["cmd.exe", "command.exe"]
+    },
+    "T1059.004":{
+        "name":"Unix Shell",
+        "tactic":"Execution",
+        "platform":["Linux", "macOS"],
+        "aliases":["bash","sh", "zsh","ksh", "fish", "/bin/sh", "/bin/bash"]
+    },
+    "T1059.005":{
+        "name":"Visual Basic",
+        "tactic":"Execution",
+        "platform":["Windows", "Linux", "macOS"],
+        "aliases":["wscript.exe", "cscript.exe", "mshata.exe", "vbscript", "vbs", "vba", "hta"]
+    },
+    "T1059.006":{
+        "name":"Python",
+        "tactic":"Execution",
+        "platform":["Windows", "Linux", "macOS"],
+        "aliases":["python", "python3", "py", "py.exe"]
+    },
+    "T1059.007":{
+        "name":"JavaScript",
+        "tactic":"Execution",
+        "platform":["Windows", "Linux", "macOS"],
+        "aliases":["node", "node.exe", "wscript.exe", "cscript.exe", "mshata.exe", "js"]
+    },
+    "T1059.008":{
+        "name":"Network Device CLI",
+        "tactic": "Execution",
+        "platform": "Network Devices",
+        "aliases": ["cli", "console","telnet", "ssh", "ios-cli", "junos-cli"]
+    },  
+    "T1059.009":{
+        "name":"CloudAPI",
+        "tactic": "Execution",
+        "platform": ["IaaS", "SaaS", "Office Suite", "Identity Provider"],
+        "aliases": ["aws", "aws.exe", "az", "gcloud", "azure", "Cloud Shell", "powershell(Az modules)"]
+    },
+    "T1059.010":{
+        "name":"AutoHotKey & AutoIT",
+        "tactic": "Execution",
+        "platform":["Windows"],
+        "aliases": ["AutoHotKey.exe", "Autoit3.exe",".ahk",".au3"]                                                                        
+    },
+    "T1059.011":{
+        "name":"Lua",
+        "tactic": "Execution",
+        "platform":["Windows", "Linux", "macOS", "Network Devices"],
+        "aliases": ["lua", "luajit", ".lua"]                                                                           
+    },
+    "T1059.012":{
+        "name":"Hypervisor CLI",
+        "tactic": "Execution",
+        "platform": ["ESXi"],
+        "aliases": ["esxcli", "vim-cmd","vsish"]                                                                           
+    },
+    "T1059.013":{
+        "name":"Container CLI/API",
+        "tactic": "Execution",
+        "platform": ["IaaS"],
+        "aliases": ["docker", "dockerd","docker-compose", "kubectl", "ctr", "crictl", "podman", "kublet"]                                                                           
+    },
+    "T1098.001":{
+        "name":"Additional Cloud Credentials",
+        "tactic": "Persistence",
+        "platform":["IaaS", "Identity Provider", "SaaS", "Office Suite"],
+        "aliases": ["AWS CreateAccessKey", "gcloud iam service-accounts keys create","Azure app credentials", "SSH key add"]                                                                           
+    },
+    "T1098.002":{
+        "name":"Additional Email Delegate Permissions",
+        "tactic":"Persistence",
+        "platform":["Office Suites", "SaaS"],
+        "aliases":["Exhange mailbox delegate", "Google Workspace delegate", "FullAccess","SendsAs"]
+    },
+    "Tl098.003":{
+        "name":"Additional Cloud Roles",
+        "tactic":"Persistence",
+        "platform":["IaaS","Identity Provider","SaaS"],
+        "aliases":["Azure RBAC role assignment", "gcloud iam policy-binding", "AttachRolePolicy"]
+    },
+    "T1098.004":{
+        "name":"SSH Authorized Keys",
+        "tactic":"Persistence",
+        "platform":["Linux","macOS", "ESXi"],
+        "aliases":["~/.ssh/authorized_keys", "/etc/ssh/sshd_config", "PermitRootLogin", "PubkeyAuthentication"]
+    },
+    "T1098.005":{
+        "name":"Device Registration",
+        "tactic":"Persistence",
+        "platform":["Identity Provider","SaaS", "Office Suite"],
+        "aliases":["MFA device enrollment", "Authenticator binding", "Trusted device"]
+    },
+    "T1098.006":{
+        "name":"Additional Container Cluster Roles",
+        "tactic":"Persistence",
+        "platform":["Containers","IaaS"],
+        "aliases":["Kubernetes RoleBinding", "ClusterRoleBinding", "ABAC policy change"]
+    },
+    "T1098.007":{
+        "name":"Additional Local or Domain Groups",
+        "tactic":"Persistence",
+        "platform":["Identity Provider","Windows"],
+        "aliases":["Add to Administrators", "Add to Domain Admins", "Group membership"]
+    },
+    "T1197":{
+        "name":"BITS Jobs",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["bitsadmin.exe", "Start-BitsTransfer", "NotifyCmdLine"]
+    },
+    "T1547.001":{
+        "name":"Registry Run Keys/Startup Folder",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["HKCU/HKLM Run", "RunOnce", "Startup Folder"]
+    },
+    "T1547.002":{
+        "name":"Authentication Package",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["LSA auth package", "msv1_0"]
+    },
+    "T1547.003":{
+        "name":"Time Prvoiders",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["W32Time",  "time providers"]
+    },
+    "T1547.004":{
+        "name":"Winlogon Helper DLL",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["Userinit", "Shell"]
+    },
+    "T1547.005":{
+        "name":"Security Support Provider",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["lsass.dll", "SSP"]
+    },
+    "T1547.006":{
+        "name":"Kernel Modules and Extensions",
+        "tactic":"Persistence",
+        "platform":["Linux", "macOS"],
+        "aliases":["LKM", "kextload", "kextunload"]
+    },
+    "T1547.007":{
+        "name":"Re-opened Applications",
+        "tactic":"Persistence",
+        "platform":["macOS"],
+        "aliases":["com.apple.loginwindows ByHost plist"]
+    },
+    "T1547.008":{
+        "name":"LSASS Driver",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["lsass driver", "Authentication package drivers"]
+    },
+    "T1547.009":{
+        "name":"Shortcut Modification",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":[".lnk", "shell link"]
+    },
+    "T1547.010":{
+        "name":"Port Monitors",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["AddMonitor", "spoolsv.exe"]
+    },
+    "T1547.011":{
+        "name":"Plist Modification",
+        "tactic":"Persistence",
+        "platform":["macOS"],
+        "aliases":[".plist autostart", "LoginWindow plist"]
+    },
+    "T1547.012":{
+        "name":"Print Processors",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["spoolsv print processor"]
+    },
+    "T1547.013":{
+        "name":"XDG Autostart Entries",
+        "tactic":"Persistence",
+        "platform":["Linux"],
+        "aliases":[".desktop files", "XDG Autostart"]
+    },
+    "T1547.014":{
+        "name":"",
+        "tactic":"Persistence",
+        "platform":["Windows"],
+        "aliases":["HKLM\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components", "StubPath"]
+    },
+    "T1098":{
+        "name":"Account Manipulation",
+        "tactic":"Persistence",
+        "platform":["Windows", "Linux", "macOS", "Cloud", "Identity Provider"],
+        "aliases":["modify account", "change permissions", "add SSH key", "role assignment"]
+    },
+    "T1136":{
+        "name":"Create Account",
+        "tactic":"Persistence",
+        "platform":["Windows", "Linux", "macOS", "Cloud", "Identity Provider"],
+        "aliases":["net user", "useradd", "New-ADUser", "create local account", "create domain account"]
+    },
+    "T1016":{
+        "name":"System Network Configuration",
+        "tactic":"Discovery",
+        "platform":["Windows", "Linux", "macOS", "Network Devices"],
+        "aliases":["ipconfig", "ifconfig", "network configuration", "show ip route", "netstat"]
+    },
+    "T1110":{
+        "name": "Brute Force",
+        "tactic": "Credential Access",
+        "platform":["Windows", "Linux", "macOS", "Network Devices", "Cloud"],
+        "aliases":["password gusssing", "credential brute force", "login attempts"]
+    }
+}
+

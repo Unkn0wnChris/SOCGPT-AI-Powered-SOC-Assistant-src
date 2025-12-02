@@ -3,7 +3,7 @@ import os
 import re
 
 # Load MITRE technique mappings from JSON file
-json_path = os.path.join(os.path.dirname(__file__), "mitre.json")
+json_path = os.path.join(os.path.dirname(__file__), "mitre1.json")
 
 with open(json_path, "r") as f:
     MITRE_Mapping_Dict = json.load(f)

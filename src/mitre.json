@@ -77,9 +77,8 @@
   "crypto miner": { "id": "T1496", "name": "Resource Hijacking", "tactic": "Impact" },
   "xmrig": { "id": "T1496", "name": "Resource Hijacking", "tactic": "Impact" },
 
-  "data_transfer_size_limits": {"id":"T1030", "name": "Data Transfer Size Limits", "tactic":"Exfiltration"}
+  "File Upload from Critical Systems to Dynamic DNS": {"id": "T1030", "name": "Data Transfer Size Limits", "tactic": "Exfiltration"}
 }
-
 
 
 
