@@ -209,6 +209,7 @@
         "platform":["Windows"],
         "aliases":["HKLM\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components", "StubPath"]
     },
+    
     "T1098":{
         "name":"Account Manipulation",
         "tactic":"Persistence",
